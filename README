@@ -1,4 +1,9 @@
-
+In this project, a tournament of X-circle games will be realized.
+In our version the board will be of size n × n, and a single game round ends when there is a winning player or when there are no empty squares left on the board.
+A player is defined as a winner if he obtained on the board a sequence of K squares marked with his sign O or X. The sequence can be vertical, balanced or diagonal.
+where n and k are variables with values chosen by the user, and with the dipole values 4 and 3 respectively.
+We will note that for the game to be meaningful, we will require n ≥ k ≥ 2.
+The game will have two types of players, a human player who will play his turn through the system.in and an automatic player, who will automatically act according to a defined strategy.
 
 The strategy of Clever player:
 This player tries to fill the first two rows on the board, each row, from left to right. 
