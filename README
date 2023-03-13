@@ -1,0 +1,32 @@
+hila953
+318933405
+
+The strategy of Clever player:
+This player tries to fill the first two rows on the board, each row, from left to right. 
+When these rows are full, he randomly chooses a slot to fill from the remaining rows, 
+if this slot is free - fills, if not - guesses again.
+
+The strategy of Genius player:
+This player tries to fill the entire board, row by row from left to right. 
+He tries to fill the leftmost slot in the first row, if it is free - fills, 
+otherwise - moves to the right, and so on.
+
+The advantages of the software design where each of the player classes implements a common interface are:
+-Prevention of code duplication.
+-Generalize the players - the interface is the common denominator between the player classes.
+-We can replace the implementation and the customer programming for the interface will not have to change their code.
+
+######### Results #########
+Player 1, Clever won: 8217 rounds
+Player 2, Whatever won: 1783 rounds
+Ties: 0
+
+######### Results #########
+Player 1, Clever won: 2721 rounds
+Player 2, Genius won: 7181 rounds
+Ties: 98
+
+######### Results #########
+Player 1, Whatever won: 5016 rounds
+Player 2, Whatever won: 4967 rounds
+Ties: 17
